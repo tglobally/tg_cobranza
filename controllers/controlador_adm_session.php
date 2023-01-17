@@ -21,7 +21,7 @@ class controlador_adm_session extends \gamboamartin\controllers\controlador_adm_
     public string $mensaje_html = '';
     public string $seccion = 'adm_seccion';
 
-    public array $secciones = array('cob_tipo_concepto','cob_tipo_ingreso');
+    public array $secciones = array('cob_tipo_concepto','cob_tipo_ingreso','cob_tipo_cliente');
     public array $links_catalogos = array();
 
     public stdClass $links;
@@ -37,10 +37,12 @@ class controlador_adm_session extends \gamboamartin\controllers\controlador_adm_
             die('Error');
         }
 
-        $this->links_catalogos["cob_tipo_concepto"]["titulo"] = "Tipos de Concepto";
+        $this->links_catalogos["cob_tipo_concepto"]["titulo"] = "Tipo Concepto";
         $this->links_catalogos["cob_tipo_concepto"]["subtitulo"] = "Catálogo";
-        $this->links_catalogos["cob_tipo_ingreso"]["titulo"] = "Tipos de Ingreso";
+        $this->links_catalogos["cob_tipo_ingreso"]["titulo"] = "Tipo Ingreso";
         $this->links_catalogos["cob_tipo_ingreso"]["subtitulo"] = "Catálogo";
+        $this->links_catalogos["cob_tipo_cliente"]["titulo"] = "Tipo Cliente";
+        $this->links_catalogos["cob_tipo_cliente"]["subtitulo"] = "Catálogo";
     }
 
     /**
