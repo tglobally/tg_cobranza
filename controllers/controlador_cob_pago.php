@@ -22,7 +22,7 @@ class controlador_cob_pago extends \gamboamartin\cobranza\controllers\controlado
         $this->sidebar['alta']['titulo'] = "Alta Pago";
         $this->sidebar['alta']['stepper_active'] = true;
         $this->sidebar['alta']['menu'] = array(
-            $this->menu_item(menu_item_titulo: "Alta Cliente", link: $this->link_alta,menu_lateral_active: true));
+            $this->menu_item(menu_item_titulo: "Alta Pago", link: $this->link_alta,menu_lateral_active: true));
 
         $this->sidebar['modifica']['titulo'] = "Modifica Pago";
         $this->sidebar['modifica']['stepper_active'] = true;
