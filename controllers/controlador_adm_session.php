@@ -21,7 +21,8 @@ class controlador_adm_session extends \gamboamartin\controllers\controlador_adm_
     public string $mensaje_html = '';
     public string $seccion = 'adm_seccion';
 
-    public array $secciones = array('cob_tipo_concepto','cob_tipo_ingreso','cob_tipo_cliente');
+    public array $secciones = array('cob_tipo_concepto','cob_tipo_ingreso','cob_tipo_cliente','cob_cliente','cob_concepto',
+        'cob_deuda','cob_pago','cob_caja');
     public array $links_catalogos = array();
 
     public stdClass $links;
@@ -43,6 +44,16 @@ class controlador_adm_session extends \gamboamartin\controllers\controlador_adm_
         $this->links_catalogos["cob_tipo_ingreso"]["subtitulo"] = "Catálogo";
         $this->links_catalogos["cob_tipo_cliente"]["titulo"] = "Tipo Cliente";
         $this->links_catalogos["cob_tipo_cliente"]["subtitulo"] = "Catálogo";
+        $this->links_catalogos["cob_cliente"]["titulo"] = "Cliente";
+        $this->links_catalogos["cob_cliente"]["subtitulo"] = "Catálogo";
+        $this->links_catalogos["cob_concepto"]["titulo"] = "Concepto";
+        $this->links_catalogos["cob_concepto"]["subtitulo"] = "Catálogo";
+        $this->links_catalogos["cob_deuda"]["titulo"] = "Deuda";
+        $this->links_catalogos["cob_deuda"]["subtitulo"] = "Catálogo";
+        $this->links_catalogos["cob_pago"]["titulo"] = "Pago";
+        $this->links_catalogos["cob_pago"]["subtitulo"] = "Catálogo";
+        $this->links_catalogos["cob_caja"]["titulo"] = "Caja";
+        $this->links_catalogos["cob_caja"]["subtitulo"] = "Catálogo";
     }
 
     /**
