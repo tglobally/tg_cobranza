@@ -29,6 +29,11 @@ class controlador_cob_cliente extends \gamboamartin\cobranza\controllers\control
         $this->sidebar['modifica']['menu'] = array(
             $this->menu_item(menu_item_titulo: "Modifica Cliente", link: $this->link_alta,menu_lateral_active: true));
 
+        $this->sidebar['deudas']['titulo'] = "Deudas";
+        $this->sidebar['deudas']['stepper_active'] = true;
+        $this->sidebar['deudas']['menu'] = array(
+            $this->menu_item(menu_item_titulo: "Deudas", link: $this->link_alta,menu_lateral_active: true));
+
     }
 
     public function menu_item(string $menu_item_titulo, string $link, bool $menu_seccion_active = false,bool $menu_lateral_active = false): array

@@ -29,6 +29,11 @@ class controlador_cob_tipo_ingreso extends \gamboamartin\cobranza\controllers\co
         $this->sidebar['modifica']['menu'] = array(
             $this->menu_item(menu_item_titulo: "Modifica Tipo Ingreso", link: $this->link_alta,menu_lateral_active: true));
 
+        $this->sidebar['tipos_de_concepto']['titulo'] = "Tipos de Concepto";
+        $this->sidebar['tipos_de_concepto']['stepper_active'] = true;
+        $this->sidebar['tipos_de_concepto']['menu'] = array(
+            $this->menu_item(menu_item_titulo: "Tipos de Concepto", link: $this->link_alta,menu_lateral_active: true));
+
     }
 
     public function menu_item(string $menu_item_titulo, string $link, bool $menu_seccion_active = false,bool $menu_lateral_active = false): array

@@ -29,6 +29,11 @@ class controlador_cob_deuda extends \gamboamartin\cobranza\controllers\controlad
         $this->sidebar['modifica']['menu'] = array(
             $this->menu_item(menu_item_titulo: "Modifica Deuda", link: $this->link_alta,menu_lateral_active: true));
 
+        $this->sidebar['pagos']['titulo'] = "Pagos";
+        $this->sidebar['pagos']['stepper_active'] = true;
+        $this->sidebar['pagos']['menu'] = array(
+            $this->menu_item(menu_item_titulo: "Pagos", link: $this->link_alta,menu_lateral_active: true));
+
     }
 
     public function menu_item(string $menu_item_titulo, string $link, bool $menu_seccion_active = false,bool $menu_lateral_active = false): array

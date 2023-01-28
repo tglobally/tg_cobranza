@@ -1,4 +1,4 @@
-<?php /** @var \tglobally\tg_cobranza\controllers\controlador_cob_tipo_cliente $controlador */ ?>
+s<?php /** @var \tglobally\tg_cobranza\controllers\controlador_cob_tipo_ingreso $controlador */ ?>
 
 
 <?php (new \tglobally\template_tg\template())->sidebar($controlador); ?>
@@ -9,19 +9,11 @@
         <h3 class="text-center titulo-form">Hola, <?php echo $controlador->datos_session_usuario['adm_usuario_user']; ?> </h3>
 
         <div class="  form-main" id="form">
-            <form method="post" action="<?php echo $controlador->link_cob_cliente_alta_bd;?>" class="form-additional">
+            <form method="post" action="<?php echo $controlador->link_cob_tipo_concepto_alta_bd;?>" class="form-additional">
 
-                <?php echo $controlador->inputs->select->cob_tipo_cliente_id; ?>
-                <?php echo $controlador->inputs->select->org_sucursal_id; ?>
-                <?php echo $controlador->inputs->cob_cliente_codigo; ?>
-                <?php echo $controlador->inputs->cob_cliente_codigo_bis; ?>
-                <?php echo $controlador->inputs->cob_cliente_nombre; ?>
-                <?php echo $controlador->inputs->cob_cliente_ap; ?>
-                <?php echo $controlador->inputs->cob_cliente_am; ?>
-                <?php echo $controlador->inputs->cob_cliente_curp; ?>
-                <?php echo $controlador->inputs->cob_cliente_descripcion; ?>
-                <?php echo $controlador->inputs->cob_cliente_razon_social; ?>
-                <?php echo $controlador->inputs->cob_cliente_rfc; ?>
+                <?php echo $controlador->inputs->select->cob_tipo_ingreso_id; ?>
+                <?php echo $controlador->inputs->cob_tipo_concepto_codigo; ?>
+                <?php echo $controlador->inputs->cob_tipo_concepto_descripcion; ?>
 
                 <div class="buttons col-md-12">
                     <div class="col-md-6">
@@ -37,7 +29,7 @@
         <div class="lista">
             <div class="card">
                 <div class="card-header">
-                    <span class="text-header">Clientes</span>
+                    <span class="text-header">Conceptos</span>
                 </div>
                 <div class="card-body">
                     <div class="cont_tabla_sucursal  col-md-12">

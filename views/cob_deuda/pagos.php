@@ -11,14 +11,14 @@
         <div class="  form-main" id="form">
             <form method="post" action="<?php echo $controlador->link_cob_pago_alta_bd;?>" class="form-additional">
 
-                <?php echo $controlador->inputs->select->cob_deuda_id; ?>
-                <?php echo $controlador->inputs->select->bn_cuenta_id; ?>
                 <?php echo $controlador->inputs->cob_pago_codigo; ?>
                 <?php echo $controlador->inputs->cob_pago_descripcion; ?>
                 <?php echo $controlador->inputs->cob_pago_fecha_de_pago; ?>
-                <?php echo $controlador->inputs->hidden_row_id; ?>
-                <?php echo $controlador->inputs->hidden_seccion_retorno; ?>
-                <?php echo $controlador->inputs->hidden_id_retorno; ?>
+                <?php echo $controlador->inputs->cob_pago_monto; ?>
+                <?php echo $controlador->inputs->select->cob_deuda_id; ?>
+                <?php echo $controlador->inputs->select->bn_cuenta_id; ?>
+                <?php echo $controlador->inputs->select->cat_sat_forma_pago_id; ?>
+                <?php echo $controlador->inputs->select->cob_caja_id; ?>
 
                 <div class="buttons col-md-12">
                     <div class="col-md-6">

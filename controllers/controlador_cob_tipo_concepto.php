@@ -29,6 +29,11 @@ class controlador_cob_tipo_concepto extends \gamboamartin\cobranza\controllers\c
         $this->sidebar['modifica']['menu'] = array(
             $this->menu_item(menu_item_titulo: "Modifica Tipo Concepto", link: $this->link_alta,menu_lateral_active: true));
 
+        $this->sidebar['conceptos']['titulo'] = "Conceptos";
+        $this->sidebar['conceptos']['stepper_active'] = true;
+        $this->sidebar['conceptos']['menu'] = array(
+            $this->menu_item(menu_item_titulo: "Conceptos", link: $this->link_alta,menu_lateral_active: true));
+
     }
 
     public function menu_item(string $menu_item_titulo, string $link, bool $menu_seccion_active = false,bool $menu_lateral_active = false): array
