@@ -11,12 +11,10 @@
             <form method="post" action="<?php echo $controlador->link_modifica_bd;?>" class="form-additional">
 
                 <?php echo $controlador->inputs->codigo; ?>
-                <?php echo $controlador->inputs->codigo_bis; ?>
                 <?php echo $controlador->inputs->nombre; ?>
                 <?php echo $controlador->inputs->ap; ?>
                 <?php echo $controlador->inputs->am; ?>
                 <?php echo $controlador->inputs->curp; ?>
-                <?php echo $controlador->inputs->descripcion; ?>
                 <?php echo $controlador->inputs->razon_social; ?>
                 <?php echo $controlador->inputs->rfc; ?>
 
